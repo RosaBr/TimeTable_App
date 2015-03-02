@@ -40,24 +40,23 @@ class EventsController < ApplicationController
       #find event by it's id and remove from DB
       Event.find(params[:id]).destroy
       #take user back to main page.
-      redirect_to(:action => 'show')
+      redirect_to(:action => 'index')
     end
 
     def create
-
       @user = User.find(session[:user])
       #make new event with user data entered
       @event = Event.new(event_params)
-      @event.created_by = @user.username
 
-      @duplicateEvent = Event.where("start_time BETWEEN {#@event.start_time} AND {#@event.end_time}")
       #Redirect to root url with success message if completed, otherwise render new
-      if @event.valid? && @event.save!
-        redirect_to root_url
-        flash[:notice] = "Event created successfully"
-      else
-        render 'new'
-      end
+
+          if @event.valid? && @event.save!
+            redirect_to root_url
+            flash[:notice] = "Event created successfully"
+          else
+            render 'new'
+          end
+
     end
 
     #private method to define necessary parameters for Event object.

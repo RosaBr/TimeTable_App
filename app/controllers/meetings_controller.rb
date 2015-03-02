@@ -7,12 +7,10 @@ class MeetingsController < ApplicationController
   end
 
   def new
-    @times = {9 => '09:00', 10 => '10:00' , 11 => '11:00',12 => '12:00',1 => '13:00', 2 =>'14:00',3 => '15:00', 4 => '16:00',5 => '17:00'}
-    @meeting = Meeting.new
+     @meeting = Meeting.new
   end
 
   def create
-    @times = {9 => '09:00', 10 => '10:00' , 11 => '11:00',12 => '12:00',1 => '13:00', 2 =>'14:00',3 => '15:00', 4 => '16:00',5 => '17:00'}
 
     @meeting = Meeting.new(meeting_params)
     #Redirect to root url with success message if created, otherwise render new

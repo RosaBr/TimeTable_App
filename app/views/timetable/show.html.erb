@@ -1,0 +1,46 @@
+<head>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.2/moment.min.js"></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.4/fullcalendar.min.js'></script>
+  <link rel="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.4/fullcalendar.css">
+
+  <h5><%= link_to 'Create Event', new_event_path %></h5>
+  <h5><%= link_to 'Create Meeting', new_meeting_path %></h5>
+
+  <%= javascript_tag do %>
+
+
+      $(document).ready(function() {
+
+      $('#calendar').fullCalendar({
+      header: {
+      left: 'prev,next, today',
+      center: 'title',
+      right: 'month agendaWeek, agendaDay'
+      },
+
+      allDayDefault: false,
+      businessHours: true,
+      slotEventOverlap: false,
+      eventOverlap: false,
+
+
+      eventSources: [
+      {
+      url: '/events.json',
+      color: 'yellow',
+      textColor: 'black'
+      },
+      {
+      url: '../meetings.json',
+      color: 'blue',
+      textColor: 'white'
+      }
+      ],
+
+
+      });
+
+      });
+  <% end %></head>
+
+<div id="calendar"></div>

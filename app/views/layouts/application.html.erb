@@ -7,9 +7,52 @@
   <link href="/assets/fullcalendar.print.css" media="print" rel="stylesheet" />
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  
+
 </head>
+
+<header>
+  <%= image_tag "UCCLogo.jpg" , alt:"Logo of University college Cork"%>
+  <div id="logo">
+    <%= image_tag "calendarLogo.jpg", alt:"Logo of University college Cork"%>
+  </div>
+</header>
 <body>
+<nav>
+  <label for="show-menu" class="show-menu">Show Menu</label>
+  <input type="checkbox" id="show-menu" role="button">
+
+  <ul id="menu">
+    <li><%= link_to 'Home', root_url %></li>
+    <% if signed_in? %>
+        <% (user = User.find(session[:user])).username %>
+    <li><%= link_to 'My Profile',user %></a></li>
+    <% else %>
+    <% end %>
+    <li><a href="timetable.html">Calendar</a></li>
+    <li><a href = "events\index.html">My Appointments</a></li>
+  </ul>
+</nav>
 <%= yield %>
 
 </body>
+<footer>
+  <p>
+    <small>
+      <strong> University College Cork </strong>
+      <%= image_tag "location.png"%>Western Road, Cork
+      <%= image_tag "phone.png" %><a href="+353 (0)21 490 3000">+353 (0)21 490 3000</a>
+    </small>
+  </p>
+  <p>
+
+
+    <small>
+    &copy; Group One. All rights reserved.
+
+    </small>
+  </p>
+</footer>
+
 </html>

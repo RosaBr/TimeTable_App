@@ -21,11 +21,13 @@
       header: {
       left: 'prev,next, today',
       center: 'title',
-      right: 'month, agendaWeek, agendaDay'
+      right: 'month agendaWeek, agendaDay'
       },
 
       allDayDefault: false,
       businessHours: true,
+      slotEventOverlap: false,
+      eventOverlap: false,
 
 
       eventSources: [
@@ -47,47 +49,9 @@
       });
   <% end %></head>
 <body>
-<header>
-  <%= image_tag "UCCLogo.jpg" %>
-  <div id="logo">
-    <%= image_tag"calendarLogo.jpg"%>
-  </div>
-</header>
-<nav>
-<label for="show-menu" class="show-menu">Show Menu</label>
-<input type="checkbox" id="show-menu" role="button">
 
-<ul id="menu">
-  <li><a href="home.html">Home</a></li>
-  <li><a href="users\show.html">My Profile</a></li>
-  <li><a href="#">Calendar</a></li>
-  <li><a href="timetable\propose_meeting.html">Add meeting</a></li>
-</ul>
-</nav>
 <div id="calendar"></div>
 
-<footer>
-  <p>
-    <small>
-      <strong> University College Cork </strong>
-      <%= image_tag "location.png"%>Western Road, Cork
-      <%= image_tag "phone.png" %><a href="+353 (0)21 490 3000">+353 (0)21 490 3000</a>
-    </small>
-  </p>
-  <p>
-    <small>
-      &copy; Group One. All rights reserved.
-      <script type="text/javascript">
-          var currentDate = new Date()
-          var day = currentDate.getDate()
-          var month = currentDate.getMonth() + 1
-          var year = currentDate.getFullYear()
-          document.write("<b>" + day + "/" + month + "/" + year + "</b>")
-      </script>
-
-    </small>
-  </p>
-</footer>
 
 </body>
 

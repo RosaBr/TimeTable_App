@@ -1,12 +1,13 @@
 class User < ActiveRecord::Base
 
   has_one :timetable
+  has_many :events
+  has_many :meetings
 
   #This takes care of authentication and verification
   has_secure_password
 
   #Downcase Email before saving,Just in case
-  before_save { self.email = email.downcase }
 
   #Regular Expression to validate Email
   EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

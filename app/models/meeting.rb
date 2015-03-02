@@ -10,7 +10,10 @@ class Meeting < ActiveRecord::Base
   validates :memberID4, presence: true, length: { minimum: 9, maximum: 9 }
   validates :memberID5, presence: true, length: { minimum: 9, maximum: 9 }
   validates :memberID6, presence: true, length: { minimum: 9, maximum: 9 }
+  validate :unique_name
 
-
+  def unique_name
+    self.errors.add(:start_time, 'is already taken by an event') if Event.where(start_time: self.start_time).exists?
+  end
 end
 
