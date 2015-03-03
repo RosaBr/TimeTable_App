@@ -54,8 +54,8 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/timetable/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44270834" vertical-offset="0" max-vertical-offset="1156">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.6458333" vertical-offset="602" max-vertical-offset="1156">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -478,12 +478,6 @@
       <option name="number" value="Default" />
       <updated>1423503294139</updated>
     </task>
-    <task id="LOCAL-00091" summary="25/02/2015 17:39">
-      <created>1425389388303</created>
-      <option name="number" value="00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1425389388303</updated>
-    </task>
     <task id="LOCAL-00092" summary="25/02/2015 17:39">
       <created>1425389447989</created>
       <option name="number" value="00092" />
@@ -772,7 +766,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425395917336</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="25/02/2015 17:39">
+      <created>1425396034794</created>
+      <option name="number" value="00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1425396034795</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1087,8 +1087,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/timetable/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44270834" vertical-offset="0" max-vertical-offset="1156">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.6458333" vertical-offset="602" max-vertical-offset="1156">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>
