@@ -69,8 +69,8 @@ input:focus {
 
 #schedule img {
     float: right;
-    width: 40%;
+    width: 1000px;
     margin-left: 2%;
     margin-right: 3%;
-    height: 10px;
+    height: 1px;
 }
