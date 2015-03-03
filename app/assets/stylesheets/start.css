@@ -63,6 +63,8 @@ input:focus {
 
 #one1 {
     margin-top: 3%;
+    float: right;
+    width: 30%;
 }
 
 #one1 h1 {
