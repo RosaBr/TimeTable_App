@@ -1,11 +1,11 @@
-form {
+#form {
     float: left;
     margin-left: 5%;
     margin-top: 2%;
     width: 45%;
 }
 
-form button {
+#form button {
     float: right;
     margin-right: -6%;
 }
