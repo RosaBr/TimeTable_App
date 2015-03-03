@@ -5,7 +5,7 @@
     width: 45%;
 }
 
-#form button {
+#form #button {
     float: right;
     margin-right: -6%;
 }
@@ -37,6 +37,10 @@ select {
 }
 
 #reset .button {
+    margin-right: 4%;
+}
+
+#reset #button {
     margin-right: 4%;
 }
 
