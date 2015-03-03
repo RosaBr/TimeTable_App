@@ -9,6 +9,7 @@
 </head>
 <body>
 <div id="main" >
+  <div id="register">
   <%= image_tag "logo6.jpg" %>
 <%= form_for @user, url: users_path do |f| %>
     <% if @user.errors.any? %>
@@ -52,6 +53,7 @@
       <%= f.submit :create_account, value: "Create Account" %>
     </div>
 <% end %>
+    </div>
 </div>
 </body>
 
