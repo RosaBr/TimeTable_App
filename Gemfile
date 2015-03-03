@@ -42,3 +42,4 @@ gem 'fullcalendar-rails'
 
 gem 'bootstrap-sass'
 gem 'bootstrap-sass-rails'
+gem 'mailboxer', '~> 0.12.5'
