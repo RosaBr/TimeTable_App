@@ -47,6 +47,7 @@ class EventsController < ApplicationController
       @user = User.find(session[:user])
       #make new event with user data entered
       @event = Event.new(event_params)
+      @event.created_by = @user.username
 
       #Redirect to root url with success message if completed, otherwise render new
 

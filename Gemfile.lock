@@ -64,7 +64,6 @@ GEM
     momentjs-rails (2.9.0)
       railties (>= 3.1)
     multi_json (1.10.1)
-    mysql (2.9.1-x86-mingw32)
     rack (1.5.2)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -129,7 +128,6 @@ DEPENDENCIES
   fullcalendar-rails
   jbuilder (~> 2.0)
   jquery-rails
-  mysql
   rails (= 4.1.8)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

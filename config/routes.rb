@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   resources :meetings
   resources :events
   resources :static_pages
+  resources :coursemodules
 
   get 'account_confirmation', to: 'users#account_confirmation'
   # The priority is based upon order of creation: first created -> highest priority.
