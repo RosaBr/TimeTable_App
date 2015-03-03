@@ -64,8 +64,8 @@
       <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.043147206" vertical-offset="136" max-vertical-offset="901">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4314721" vertical-offset="0" max-vertical-offset="901">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -526,12 +526,6 @@
       <option name="number" value="Default" />
       <updated>1423503294139</updated>
     </task>
-    <task id="LOCAL-00043" summary="25/02/2015 17:39">
-      <created>1425126064538</created>
-      <option name="number" value="00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1425126064538</updated>
-    </task>
     <task id="LOCAL-00044" summary="25/02/2015 17:39">
       <created>1425126115482</created>
       <option name="number" value="00044" />
@@ -820,7 +814,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425389388303</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="25/02/2015 17:39">
+      <created>1425389447989</created>
+      <option name="number" value="00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1425389447989</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -985,14 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8076925" vertical-offset="70" max-vertical-offset="663">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/normalize.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3235" max-vertical-offset="3655">
@@ -1017,10 +1009,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8076925" vertical-offset="70" max-vertical-offset="663">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.043147206" vertical-offset="136" max-vertical-offset="901">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4314721" vertical-offset="0" max-vertical-offset="901">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           <folding />
         </state>
       </provider>
