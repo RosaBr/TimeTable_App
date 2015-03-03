@@ -15,7 +15,7 @@
   <div id="form">
     <h1>Welcome</h1>
     <p> Welcome to the UCC Timetable and Scheduler</p>
-        <div id="reset"
+        <div id="reset">
 <% if signed_in? %>
     <% (user = User.find(session[:user])).username %>
     <h5 id="button"><%= link_to "Signout", session_path(user), method: :delete %></h5>
