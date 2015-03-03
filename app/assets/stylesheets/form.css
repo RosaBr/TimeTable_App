@@ -49,6 +49,25 @@ input {
     margin: 5px;
 }
 
+#changes label {
+    display:block;
+    margin: -20px;
+    width:105%;
+    font-size:18px;
+    color:white;
+    padding:20px 10px 10px 0;
+    margin-top: 25px;
+}
+
+#changes input {
+    float:right;
+    width:60%;
+    margin:-20px;
+    font-size:18px;
+    padding:5px;
+    margin: 50px;
+}
+
 input:focus {
     outline:none;
     border-color:white;
