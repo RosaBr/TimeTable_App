@@ -65,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.45939085" vertical-offset="40" max-vertical-offset="714">
-              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -468,12 +468,6 @@
       <option name="number" value="Default" />
       <updated>1423503294139</updated>
     </task>
-    <task id="LOCAL-00085" summary="25/02/2015 17:39">
-      <created>1425388882187</created>
-      <option name="number" value="00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1425388882187</updated>
-    </task>
     <task id="LOCAL-00086" summary="25/02/2015 17:39">
       <created>1425388904143</created>
       <option name="number" value="00086" />
@@ -762,7 +756,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425395231771</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="25/02/2015 17:39">
+      <created>1425395264303</created>
+      <option name="number" value="00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1425395264303</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -986,7 +986,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45939085" vertical-offset="40" max-vertical-offset="714">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
           <folding />
         </state>
       </provider>
