@@ -22,7 +22,7 @@
     <h4 id="button"><%= link_to 'Your Profile', user  %></h4>
 <% else %>
         <h5 id="button"><%= button_to "Login", new_session_path, method: :get, class:'button' %></h5>
-        <h4 id=" button"><%= button_to 'Register', new_user_path, method: :get , class:'button' %></h4>
+        <h5 id=" button"><%= button_to 'Register', new_user_path, method: :get,class:'button' %></h5>
 <%end%>
     </div>
     </div>
