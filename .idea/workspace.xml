@@ -33,7 +33,7 @@
       <file leaf-file-name="start.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/start.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79268295" vertical-offset="831" max-vertical-offset="1853">
+            <state vertical-scroll-proportion="0.9170732" vertical-offset="780" max-vertical-offset="1853">
               <caret line="68" column="15" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
               <folding />
             </state>
@@ -467,12 +467,6 @@
       <option name="number" value="Default" />
       <updated>1423503294139</updated>
     </task>
-    <task id="LOCAL-00132" summary="25/02/2015 17:39">
-      <created>1425395206564</created>
-      <option name="number" value="00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1425395206564</updated>
-    </task>
     <task id="LOCAL-00133" summary="25/02/2015 17:39">
       <created>1425395231771</created>
       <option name="number" value="00133" />
@@ -761,7 +755,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425398818791</updated>
     </task>
-    <option name="localTasksCounter" value="181" />
+    <task id="LOCAL-00181" summary="25/02/2015 17:39">
+      <created>1425398836154</created>
+      <option name="number" value="00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1425398836154</updated>
+    </task>
+    <option name="localTasksCounter" value="182" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1096,7 +1096,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/start.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79268295" vertical-offset="831" max-vertical-offset="1853">
+        <state vertical-scroll-proportion="0.9170732" vertical-offset="780" max-vertical-offset="1853">
           <caret line="68" column="15" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
           <folding />
         </state>
