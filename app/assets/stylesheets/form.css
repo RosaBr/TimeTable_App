@@ -38,6 +38,7 @@ label {
     color:white;
     padding:20px 10px 10px 0;
     margin-top: 10px;
+    margin: 5px;
 }
 
 input {
@@ -45,6 +46,7 @@ input {
     width:60%;
     font-size:18px;
     padding:5px;
+    margin: 5px;
 }
 
 input:focus {
