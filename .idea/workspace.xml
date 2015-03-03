@@ -426,12 +426,6 @@
       <option name="number" value="Default" />
       <updated>1423503294139</updated>
     </task>
-    <task id="LOCAL-00096" summary="25/02/2015 17:39">
-      <created>1425390331277</created>
-      <option name="number" value="00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1425390331277</updated>
-    </task>
     <task id="LOCAL-00097" summary="25/02/2015 17:39">
       <created>1425390476599</created>
       <option name="number" value="00097" />
@@ -720,7 +714,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425396198199</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="25/02/2015 17:39">
+      <created>1425396319138</created>
+      <option name="number" value="00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1425396319139</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1018,18 +1018,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.153847" vertical-offset="178" max-vertical-offset="1105">
-          <caret line="52" column="61" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/normalize.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="97" max-vertical-offset="3825">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.153847" vertical-offset="178" max-vertical-offset="1105">
+          <caret line="52" column="61" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
           <folding />
         </state>
       </provider>
