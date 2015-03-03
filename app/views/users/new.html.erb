@@ -8,7 +8,9 @@
 
 </head>
 <body>
-
+<div id="main" >
+  <div id="register">
+  <%= image_tag "logo6.jpg" %>
 <%= form_for @user, url: users_path do |f| %>
     <% if @user.errors.any? %>
         <div id="error_explanation">
@@ -48,10 +50,11 @@
       <%= f.password_field :password_confirmation, placeholder: "Repeat Password" %>
     </div>
     <div class="actions">
-      <%= f.submit :create_account, value: "Create Account" %>
+      <%= f.submit :create_account, value: "Create Account" ,class:'button' %>
     </div>
 <% end %>
-
+    </div>
+</div>
 </body>
 
 </html>

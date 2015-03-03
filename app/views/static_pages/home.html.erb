@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <title>UCC Calendar Homepage</title>
-
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="start.css" />
 
 </head>
 <body>
@@ -14,15 +15,16 @@
   <div id="form">
     <h1>Welcome</h1>
     <p> Welcome to the UCC Timetable and Scheduler</p>
-
+        <div id="reset">
 <% if signed_in? %>
     <% (user = User.find(session[:user])).username %>
-    <h5 id="button"><%= link_to "Signout", session_path(user), method: :delete %></h5>
-    <h4 id="button"><%= link_to 'Your Profile', user  %></h4>
+    <h5 id="button"><%= button_to "Signout", session_path(user), method: :delete %></h5>
+    <h4 id="button"><%= button_to 'Your Profile', user  %></h4>
 <% else %>
         <h5 id="button"><%= button_to "Login", new_session_path, method: :get %></h5>
         <h4 id=" button"><%= button_to 'Register', new_user_path, method: :get  %></h4>
 <%end%>
+    </div>
     </div>
 </div>
 

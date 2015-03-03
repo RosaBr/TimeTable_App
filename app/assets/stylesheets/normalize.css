@@ -21,7 +21,7 @@ html {
     width: 40%;
     float: left;
     height:80%;
-    margin-left: 0em;
+    margin-left: 1em;
     margin-top: 1em;
     box-shadow: 10px 10px 5px #888888;
     opacity: 0.7;
@@ -90,12 +90,11 @@ li a {
     text-decoration: none;
 }
 
-/*Hover state for top level links*/
+
 li:hover a {
     background: #19c589;
 }
 
-/*Style for dropdown links*/
 li:hover ul a {
     background: #f3f3f3;
     color: #2f3036;
