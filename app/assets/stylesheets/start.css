@@ -21,6 +21,11 @@ select {
     color: white;
 }
 
+#event {
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
 h3
 {
     color: white;
