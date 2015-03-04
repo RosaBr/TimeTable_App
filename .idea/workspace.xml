@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7883d692-fd39-422a-b25d-9cbad9cc8fbd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/password_resets/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/password_resets/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/password_resets/new.html.erb" afterPath="$PROJECT_DIR$/app/views/password_resets/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TimeTable_App.iws" />
@@ -91,21 +91,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="edit.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/password_resets/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6197917" vertical-offset="0" max-vertical-offset="1292">
+            <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="1292">
               <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/password_resets/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-29.423077" vertical-offset="0" max-vertical-offset="1326">
-              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.6197917" vertical-offset="0" max-vertical-offset="1326">
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -176,7 +176,6 @@
         <option value="$PROJECT_DIR$/app/views/meetings/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/password_resets/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/timetable/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/normalize.css" />
         <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
@@ -190,6 +189,7 @@
         <option value="$PROJECT_DIR$/app/views/meetings/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/meetings/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/password_resets/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/password_resets/new.html.erb" />
       </list>
     </option>
   </component>
@@ -562,12 +562,6 @@
       <option name="number" value="Default" />
       <updated>1423503294139</updated>
     </task>
-    <task id="LOCAL-00141" summary="25/02/2015 17:39">
-      <created>1425396078540</created>
-      <option name="number" value="00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1425396078540</updated>
-    </task>
     <task id="LOCAL-00142" summary="25/02/2015 17:39">
       <created>1425396150447</created>
       <option name="number" value="00142" />
@@ -856,7 +850,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425469479564</updated>
     </task>
-    <option name="localTasksCounter" value="190" />
+    <task id="LOCAL-00190" summary="25/02/2015 17:39">
+      <created>1425469730139</created>
+      <option name="number" value="00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1425469730139</updated>
+    </task>
+    <option name="localTasksCounter" value="191" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1150,14 +1150,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/password_resets/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.423077" vertical-offset="0" max-vertical-offset="1326">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/meetings/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="782">
@@ -1200,7 +1192,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/password_resets/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6197917" vertical-offset="0" max-vertical-offset="1292">
+        <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="1292">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/password_resets/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6197917" vertical-offset="0" max-vertical-offset="1326">
           <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding />
         </state>
