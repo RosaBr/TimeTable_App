@@ -18,6 +18,10 @@ select {
     padding:5px;
 }
 
+#changes .button {
+    margin-top: 5%;
+}
+
 .button {
     margin-top: 13%;
     margin-left: 8%;
