@@ -145,7 +145,8 @@ ul#menu ul, ul#menu ul li ul {
     opacity:0;
     position: absolute;
     z-index: 99999;
-    width:20%;
+    text-align: center;
+    width:17%;
     background:#f8f8f8;
     box-shadow:1px 1px 3px #ccc;
     -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
