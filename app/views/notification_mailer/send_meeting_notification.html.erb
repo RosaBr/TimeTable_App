@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+<p>
+  A meeting has been created by <%=@user.fname%> <%=@user.lname%>
+  <br/>
+  Its members are:
+  <ul>
+    <li><%= @meeting.meeting_created_by %></li>
+    <li><%= @meeting.memberID1 %></li>
+    <li><%= @meeting.memberID2 %></li>
+    <li><%= @meeting.memberID3 %></li>
+    <li><%= @meeting.memberID4 %></li>
+    <li><%= @meeting.memberID5 %></li>
+    <li><%= @meeting.memberID6 %></li>
+  </ul>
+</p>
+<p>
+  The time for the meeting is:
+  <%= @meeting.start_time %> until <%= @meeting.end_time %>
+</p>
+
+</body>
+</html>

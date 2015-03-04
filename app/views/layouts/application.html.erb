@@ -8,7 +8,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
-  
+
 
 </head>
 
@@ -27,11 +27,11 @@
     <li><%= link_to 'Home', root_url %></li>
     <% if signed_in? %>
         <% (user = User.find(session[:user])).username %>
-    <li><%= link_to 'My Profile',user %></a></li>
+    <li><%= link_to 'My Profile',user %></li>
     <% else %>
     <% end %>
-    <li><a href="timetable.html">Calendar</a></li>
-    <li><a href = "events\index.html">My Appointments</a></li>
+    <li><%= link_to 'Timetable', controller: 'timetable', action: 'index'  %></li>
+    <li><%= link_to 'My Appointments', controller: 'events', action: 'index' %></li>
   </ul>
 </nav>
 <%= yield %>
