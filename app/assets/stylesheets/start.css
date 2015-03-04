@@ -116,7 +116,6 @@ input:focus {
 }
 
 #error_explanation {
-    float: right;
     marign-top: 80%;
 }
 
