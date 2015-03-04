@@ -165,7 +165,6 @@ ul#menu ul li ul {
 
 ul#menu ul li {
     clear:both;
-    width:100%;
     border:0 none;
     border-bottom:1px solid #c9c9c9;
 
@@ -173,7 +172,6 @@ ul#menu ul li {
 
 ul#menu ul li a {
     background:none;
-
     color:#616161;
     text-shadow:1px 1px 0px #fff;
     text-decoration:none;
