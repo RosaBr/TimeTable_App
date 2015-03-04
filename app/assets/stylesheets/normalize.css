@@ -146,9 +146,9 @@ input[type=checkbox]:checked ~ #menu{
     ul {
         position: static;
         display: none;
-        margin-bottom: 50%;
+        margin-bottom: 33%;
         width: 100%;
-        margin-top: 4%;
+        margin-top: 5%;
 
 
     }
