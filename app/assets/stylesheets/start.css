@@ -17,11 +17,6 @@ select {
     font-size:18px;
     padding:5px;
 }
-
-#table {
-    border: 1px solid;
-    margin-left: 10%;
-}
 .link {
     color: white;
 }
