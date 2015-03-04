@@ -18,6 +18,9 @@ select {
     padding:5px;
 }
 
+#table {
+    border: 1px solid;
+}
 .link {
     color: white;
 }
