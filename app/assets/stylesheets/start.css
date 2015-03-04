@@ -24,6 +24,7 @@ select {
 
 #password {
     margin-top: 10%;
+    flaot: right;
 }
 
 #changes .button {
