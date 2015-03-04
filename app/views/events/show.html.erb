@@ -1,5 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Your Profile</title>
+
+
+
+</head>
+<body>
+<div id="main">
+  <div id="one2">
 <p>
-  <strong>Title</strong>
+  <strong>Title:</strong>
   <%= @event.title %>
 </p>
 <p>
@@ -8,16 +21,23 @@
 </p>
 
 <p>
-  <strong>Date</strong>
+  <strong>Date:</strong>
   <%= @event.date %>
 </p>
 <p>
-  <strong>Start Time</strong>
+  <strong>Start Time:</strong>
   <%= @event.start_time %>
 </p>
 <p>
-  <strong>End Time</strong>
+  <strong>End Time:</strong>
   <%= @event.end_time %>
 </p>
 <%= link_to 'Destroy', @event, method: :delete, data: { confirm: 'Are you sure?' }, class:'link' %></td>
+  </div>
+  <div id="schedule">
+    <%= image_tag "unnamed.jpg"%>
+  </div>
+</div>
+</body>
 
+</html>
