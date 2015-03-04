@@ -1,5 +1,5 @@
 <div id="main">
-  <table id="table">
+  <div id="table">
 <% @coursemodules.each do |cm| %>
 
     <tr>
@@ -10,5 +10,5 @@
       <td><%= link_to 'Destroy', cm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
 <% end %>
-      </table>
+      </div>
     </div>
