@@ -171,15 +171,3 @@ ul#menu ul li {
 
 }
 
-ul#menu ul li a {
-    background:none;
-    padding:7px 15px;
-    color:#616161;
-    text-shadow:1px 1px 0px #fff;
-    text-decoration:none;
-    display:inline-block;
-    border:0 none;
-    float:left;
-    clear:both;
-    width:150px;
-}
