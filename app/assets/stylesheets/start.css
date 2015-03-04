@@ -182,4 +182,5 @@ ul#menu ul li a {
     float:left;
     clear:both;
     width:150px;
+    padding-bottom: 10px;
 }
