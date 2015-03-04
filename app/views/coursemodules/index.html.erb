@@ -1,6 +1,6 @@
 <div id="main">
 <% @coursemodules.each do |cm| %>
-
+<table></table>
     <tr>
       <td><%=cm.course_code%></td>
       <td><%=cm.module_code%></td>
@@ -8,5 +8,6 @@
       <td><%= link_to 'Edit', edit_coursemodule_path(cm) %></td>
       <td><%= link_to 'Destroy', cm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
+      </table>
 <% end %>
 </div>
