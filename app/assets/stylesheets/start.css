@@ -21,7 +21,7 @@ select {
     color: white;
 }
 
-#event {
+#event p{
     margin-left: 5%;
     margin-top: 10%;
 }
