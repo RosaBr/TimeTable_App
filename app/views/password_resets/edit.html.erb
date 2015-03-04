@@ -12,7 +12,7 @@
 
 <div id="main">
 <%= form_for @user, url: password_reset_path(params[:id]) do |f| %>
-      <h4>Enter new password</h4>
+      <h3>Enter new password</h3>
     <div class="field">
       <%= f.label :password %>
       <%= f.password_field :password %>
