@@ -141,7 +141,7 @@ input[type=checkbox]:checked ~ #menu{
 
 
 
-@media screen and (max-width : 1350px){
+@media screen and (min-width : 800px){
     /*Make dropdown links appear inline*/
     ul {
         position: static;
@@ -171,14 +171,14 @@ input[type=checkbox]:checked ~ #menu{
     }
 }
 
-@media screen and (max-width : 200px){
+@media screen and (min-width : 200px){
     /*Make dropdown links appear inline*/
     ul {
         position: static;
         display: none;
-        margin-left: 10%;
+        margin-bottom: 35%;
         width: 100%;
-        margin: 3%;
+        margin-top: 10%;
 
     }
     /*Create vertical spacing*/
