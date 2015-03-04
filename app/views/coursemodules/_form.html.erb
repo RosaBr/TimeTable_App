@@ -1,15 +1,4 @@
 <%= form_for(@coursemodule) do |f| %>
-    <% if @coursemodule.errors.any? %>
-        <div id="error_explanation">
-          <h2><%= pluralize(@coursemodule.errors.count, "error") %> prohibited this module from being saved:</h2>
-
-          <ul>
-            <% @coursemodule.errors.full_messages.each do |message| %>
-                <li><%= message %></li>
-            <% end %>
-          </ul>
-        </div>
-    <% end %>
 
     <div class="field">
       <%= f.label :module_code %><br>
@@ -35,6 +24,18 @@
     <div class="actions">
       <%= f.submit class:'button'%>
     </div>
+
+    <% if @coursemodule.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@coursemodule.errors.count, "error") %> prohibited this module from being saved:</h2>
+
+          <ul>
+            <% @coursemodule.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
 <% end %>
 
 <script type="text/javascript">
