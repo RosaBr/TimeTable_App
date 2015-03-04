@@ -1,6 +1,16 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Your Profile</title>
+
+
+
+</head>
+<body>
 <div id="main">
-  <div id="event">
+  <div id="one1">
 <p>
   <strong>Title</strong>
   <%= @event.title %>
@@ -23,5 +33,11 @@
   <%= @event.end_time %>
 </p>
 <%= link_to 'Destroy', @event, method: :delete, data: { confirm: 'Are you sure?' }, class:'link' %></td>
-    </div>
+  </div>
+  <div id="schedule">
+    <%= image_tag "unnamed.jpg"%>
+  </div>
 </div>
+</body>
+
+</html>
