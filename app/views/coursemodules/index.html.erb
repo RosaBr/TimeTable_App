@@ -1,5 +1,4 @@
 <div id="main">
-  <div id="table">
 <% @coursemodules.each do |cm| %>
 
     <tr>
@@ -10,5 +9,7 @@
       <td><%= link_to 'Destroy', cm, method: :delete, data: { confirm: 'Are you sure?' } , class:'link'%></td>
     </tr>
 <% end %>
-      </div>
+  <div id="schedule">
+    <%= image_tag "unnamed.jpg", alt:"Logo of University college Cork" %>
+  </div>
     </div>
