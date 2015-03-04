@@ -115,6 +115,10 @@ input:focus {
     margin-left: 5%;
 }
 
+#error_explanation {
+    float: right;
+    marign-top: 80%;
+}
 
 #one2 p {
     font-size: 15px;
