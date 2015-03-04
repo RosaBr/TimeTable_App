@@ -18,13 +18,10 @@ select {
     padding:5px;
 }
 
-.h4 {
-    margin-left: 5%;
-}
 
 h3
 {
-    font-color: white;
+    color: white;
 }
 
 #changes .button {
