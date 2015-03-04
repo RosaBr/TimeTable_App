@@ -31,7 +31,10 @@
     <% else %>
     <% end %>
     <li><%= link_to 'Timetable', controller: 'timetable', action: 'index'  %></li>
-    <li><%= link_to 'My Appointments', controller: 'events', action: 'index' %></li>
+    <li><%= link_to 'My Appointments', controller: 'events', action: 'index' %>
+        <li><%= link_to 'Events', controller: 'events', action: 'index' %></li>
+        <li><%= link_to 'Meetings', controller: 'events', action: 'index' %></li>
+    </li>
   </ul>
 </nav>
 <%= yield %>
