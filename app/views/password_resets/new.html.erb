@@ -18,7 +18,7 @@
       <%= text_field_tag :email, params[:email] %>
     </div>
     <div class="actions">
-      <%= submit_tag :recover, value: "Recover" %>
+      <%= submit_tag :recover, value: "Recover", class:'button' %>
     </div>
     <div class="messages">
       <% flash.each do |name,msg| %>
