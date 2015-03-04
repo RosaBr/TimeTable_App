@@ -178,7 +178,7 @@ input[type=checkbox]:checked ~ #menu{
         display: none;
         margin-left: 10%;
         width: 100%;
-        margin: 3%;
+        margin-top: 33%;
 
     }
     /*Create vertical spacing*/
