@@ -116,7 +116,7 @@ input:focus {
 }
 
 #error_explanation {
-    margin-left: 50%;
+    float: right;
 }
 
 #one2 p {
