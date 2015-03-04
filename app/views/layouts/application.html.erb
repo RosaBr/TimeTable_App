@@ -31,7 +31,7 @@
     <% else %>
     <% end %>
     <li><%= link_to 'Timetable', controller: 'timetable', action: 'index'  %></li>
-    <li><%= link_to 'My Appointments &raquo;', controller: 'events', action: 'index' %>
+    <li><%= link_to "&raquo;"'My Appointments', controller: 'events', action: 'index' %>
         <ul>
             <li><%= link_to 'Events', controller: 'events', action: 'new' %></li>
             <li><%= link_to 'Meetings', controller: 'meetings', action: 'new' %></li>
