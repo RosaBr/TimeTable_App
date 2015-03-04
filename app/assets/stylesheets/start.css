@@ -108,6 +108,18 @@ input:focus {
     font-size: 20px;
 }
 
+#one2 {
+    margin-top: 5%;
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+}
+
+
+#one2 p {
+    font-size: 12px;
+}
+
 #schedule img {
     float: right;
     width: 40%;
