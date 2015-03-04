@@ -137,6 +137,7 @@ ul#menu li:hover > ul
 {
     visibility:visible;
     opacity:1;
+    background: yellow;
 }
 
 ul#menu ul, ul#menu ul li ul {
