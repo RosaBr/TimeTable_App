@@ -10,7 +10,8 @@
 </head>
 <body>
 <div id="main">
-<h5><%= link_to 'Edit Profile', edit_user_path %></h5>
+  <div id="one1">
+<h5><%= link_to 'Edit Profile', edit_user_path, class:'link' %></h5>
 
 <p>
   <strong>Name:</strong>
@@ -18,7 +19,7 @@
 </p>
 
 <p>
-  <strong>Username</strong>
+  <strong>Username:</strong>
   <%= @user.username %>
 </p>
 
@@ -26,6 +27,7 @@
   <strong>Course Enrolled:</strong>
   <%= @user.course_enrolled %>
 </p>
+    </div>
   <div id="schedule">
     <%= image_tag "unnamed.jpg", alt:"Logo of University college Cork" %>
   </div>
