@@ -11,8 +11,8 @@
 <body>
 
 <div id="main">
-<h4>Enter new password</h4>
 <%= form_for @user, url: password_reset_path(params[:id]) do |f| %>
+      <h4>Enter new password</h4>
     <div class="field">
       <%= f.label :password %>
       <%= f.password_field :password %>
