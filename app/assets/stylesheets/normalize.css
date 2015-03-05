@@ -151,7 +151,7 @@ input[type=checkbox]:checked ~ #menu{
 
 
 
-@media screen and (max-width : 1330px){
+@media screen and (max-width : 1320px){
     ul {
         position: static;
         display: none;
