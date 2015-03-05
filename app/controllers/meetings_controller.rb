@@ -11,21 +11,16 @@ class MeetingsController < ApplicationController
   end
 
   def create
-    if signed_in?
-      @user = User.find(session[:user])
-      @meeting = Meeting.new(meeting_params)
-      #Redirect to root url with success message if created, otherwise render new
-      if @meeting.valid? && @meeting.save!
-        NotificationMailer.send_meeting_notification(@meeting,@user).deliver
-        redirect_to(:action => 'show',:id => @meeting.id)
-        flash[:notice] = "Meeting created successfully"
-      else
-        render 'new'
-      end
+    @user = User.find(session[:user])
+    @meeting = Meeting.new(meeting_params)
+    #Redirect to root url with success message if created, otherwise render new
+    if @meeting.valid? && @meeting.save!
+      NotificationMailer.send_meeting_notification(@meeting,@user).deliver
+      redirect_to(:action => 'show',:id => @meeting.id)
+      flash[:notice] = "Meeting created successfully"
     else
-      redirect_to root_url
+      render 'new'
     end
-
   end
 
   def show

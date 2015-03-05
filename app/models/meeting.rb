@@ -10,7 +10,6 @@ class Meeting < ActiveRecord::Base
   validates :memberID4, presence: true, length: { minimum: 9, maximum: 9 }
   validates :memberID5, presence: true, length: { minimum: 9, maximum: 9 }
   validates :memberID6, presence: true, length: { minimum: 9, maximum: 9 }
-  validate :unique_name
 
   validate :unique_start_time
   validate :meeting_overlap
