@@ -165,11 +165,10 @@ input[type=checkbox]:checked ~ #menu{
     li {
         margin-bottom: 1px;
     }
-    /*Make all menu links full width*/
+
     ul li, li a {
         width: 100%;
     }
-    /*Display 'show menu' link*/
     .show-menu {
         display:block;
     }
