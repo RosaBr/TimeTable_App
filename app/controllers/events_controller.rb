@@ -1,8 +1,12 @@
 class EventsController < ApplicationController
 
     def index
-      @user = User.find(session[:user])
-      @events = Event.where(created_by:  @user.username)
+      if signed_in?
+        @user = User.find(session[:user])
+        @events = Event.where(created_by:  @user.username)
+      end
+      @events = nil
+
     end
 
     def new #creates new event object
@@ -44,10 +48,13 @@ class EventsController < ApplicationController
     end
 
     def create
-      @user = User.find(session[:user])
-      #make new event with user data entered
-      @event = Event.new(event_params)
-      @event.created_by = @user.username
+
+        @user = User.find(session[:user])
+        #make new event with user data entered
+        @event = Event.new(event_params)
+        @event.created_by = @user.username
+
+
 
       #Redirect to root url with success message if completed, otherwise render new
 

@@ -29,13 +29,16 @@
         <% (user = User.find(session[:user])).username %>
     <li><%= link_to 'My Profile',user %></li>
     <% else %>
+        <li><%= link_to 'FAQ',controller: 'static_pages', action: 'AboutAppointments' %></li>
     <% end %>
     <li><%= link_to 'Timetable', controller: 'timetable', action: 'index'  %></li>
     <li><%= link_to 'My Appointments', controller: 'events', action: 'index' %>
-        <ul>
+      <% if signed_in? %>
+      <ul>
             <li><%= link_to 'Events', controller: 'events', action: 'new' %></li>
             <li><%= link_to 'Meetings', controller: 'meetings', action: 'new' %></li>
             </ul>
+      <% end %>
     </li>
   </ul>
 </nav>
