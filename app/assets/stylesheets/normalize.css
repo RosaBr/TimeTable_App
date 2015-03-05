@@ -152,7 +152,6 @@ input[type=checkbox]:checked ~ #menu{
 
 
 @media screen and (max-width : 1330px){
-    /*Make dropdown links appear inline*/
     ul {
         position: static;
         display: none;
@@ -162,7 +161,7 @@ input[type=checkbox]:checked ~ #menu{
 
 
     }
-    /*Create vertical spacing*/
+
     li {
         margin-bottom: 1px;
     }
@@ -182,7 +181,6 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 @media screen and (max-width : 200px){
-    /*Make dropdown links appear inline*/
     ul {
         position: static;
         display: none;
@@ -190,15 +188,15 @@ input[type=checkbox]:checked ~ #menu{
         width: 100%;
 
     }
-    /*Create vertical spacing*/
+
     li {
         margin-bottom: 1px;
     }
-    /*Make all menu links full width*/
+
     ul li, li a {
         width: 100%;
     }
-    /*Display 'show menu' link*/
+
     .show-menu {
         display:block;
     }
