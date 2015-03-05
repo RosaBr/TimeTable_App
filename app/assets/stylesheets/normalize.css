@@ -151,7 +151,7 @@ input[type=checkbox]:checked ~ #menu{
 
 
 
-@media screen and (max-width : 1100px){
+@media screen and (max-width : 1200px){
     /*Make dropdown links appear inline*/
     ul {
         position: static;
