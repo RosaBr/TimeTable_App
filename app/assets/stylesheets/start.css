@@ -116,8 +116,13 @@ input:focus {
 }
 
 #error_explanation {
-   font-size: 12px;
-    margin-bottom:120%;
+     font-size: 12px;
+     margin-bottom: 120%;
+ }
+
+#error_explanation {
+    font-size: 12px;
+    margin-bottom: 38%;
 }
 
 #one2 p {
