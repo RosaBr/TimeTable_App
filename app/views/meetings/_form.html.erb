@@ -1,3 +1,4 @@
+<% if signed_in? %>
 <%= form_for(@meeting) do |f| %>
     <% if @meeting.errors.any? %>
         <div id="error_explanation">
@@ -73,3 +74,7 @@
 <script type="text/javascript">
     $('.datetimepicker').datetimepicker();
 </script>
+
+<% else %>
+<p>You must be signed in to create a meeting</p>
+<% end %>

@@ -1,13 +1,18 @@
 class CoursemodulesController < ApplicationController
 
-    http_basic_authenticate_with name: "kieran", password: "kieran", except: [:index, :show]
+    http_basic_authenticate_with name: "kieran", password: "blah1", except: [:index, :show]
 
     def new
       @coursemodule = Coursemodule.new
     end
 
     def index
-      @coursemodules = Coursemodule.all
+      if signed_in?
+      @user = User.find(session[:user])
+      @coursemodules = Coursemodule.where(course_code:  @user.course_enrolled)
+      else
+        @coursemodules = nil
+      end
     end
 
     def show
@@ -20,7 +25,7 @@ class CoursemodulesController < ApplicationController
       @d = 7
 
       if @coursemodule.valid? && @coursemodule.save!
-        while @i < 15
+        while @i < 2
           @@recurmodule = Coursemodule.new(coursemodule_params)
           @@recurmodule.start_time += @d.days
           @@recurmodule.end_time += @d.days
@@ -29,7 +34,7 @@ class CoursemodulesController < ApplicationController
           @d += 7
         end
 
-          redirect_to controller: 'coursemodules', action: 'index'
+          redirect_to root_url
         flash[:notice] = "Module created successfully"
       else
         render 'new'
@@ -60,6 +65,6 @@ class CoursemodulesController < ApplicationController
 
     private
     def coursemodule_params
-      params.require( :coursemodule).permit(:module_code, :module_name, :course_code, :start_time, :end_time )
+      params.require( :coursemodule).permit(:title, :module_code, :module_name, :course_code, :start_time, :end_time )
     end
 end

@@ -9,6 +9,23 @@
 
   <h5><%= link_to 'Create Event', new_event_path %></h5>
   <h5><%= link_to 'Create Meeting', new_meeting_path %></h5>
+  <div id="fullCalModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span> <span class="sr-only">close</span></button>
+          <h4 id="modalTitle" class="modal-title"></h4>
+        </div>
+        <div id="modalBody" class="modal-body"></div>
+        <div id="modalBody2" class="modal-body"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button class="btn btn-primary"><a id="eventUrl" target="_blank">Event Page</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <%= javascript_tag do %>
 
@@ -16,6 +33,16 @@
       $(document).ready(function() {
 
       $('#calendar').fullCalendar({
+
+      buttonText:{
+        prev: '&lsaquo\; Prev',
+        next: 'Next&rsaquo\;',
+        today: 'Today',
+        month: 'Month',
+        week: 'Week',
+        day: 'Day'
+      },
+
       header: {
       left: 'prev,next, today',
       center: 'title',
@@ -28,12 +55,12 @@
       eventOverlap: false,
 
 
+
       eventSources: [
       {
       url: '/events.json',
-      color: 'yellow',
-      textColor: 'black',
-      title: 'hey'
+      color: 'red',
+      textColor: 'pink'
       },
       {
       url: '../meetings.json',
@@ -47,15 +74,28 @@
       }
       ],
 
+      eventClick:  function(event, jsEvent, view) {
+      $('#modalTitle').html('Title: ' + event.title);
+      $('#modalBody').html(event.description);
+      $('#modalBody').html(event.agenda);
+      $('#modalBody2').html('Start: '+event.start_time +  '<p></p>End: ' + event.end_time);
+      $('#eventUrl').attr('href',event.url);
+      $('#fullCalModal').modal();
+
+      return false;
+      }
+
+
 
       });
 
-      });
+            });
   <% end %></head>
 
 <body>
 
 <div id="calendar"></div>
+
 
 
 </body>
