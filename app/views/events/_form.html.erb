@@ -1,7 +1,7 @@
-
+<% if signed_in? %>
 <%= form_for(@event) do |f| %>
     <% if @event.errors.any? %>
-        <div id="error_explanation">
+        <div id="error_explanation1">
           <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
 
           <ul>
@@ -30,6 +30,7 @@
       <%= f.label :end_time %><br>
       <%= f.text_field :end_time, placeholder: 'End-Time', :class => 'datetimepicker'  %>
     </div>
+
     <div class="actions">
       <%= f.submit class:'button' %>
     </div>
@@ -39,3 +40,6 @@
 <script type="text/javascript">
     $('.datetimepicker').datetimepicker();
 </script>
+    <% else %>
+    <p>You must be signed in to create an event</p>
+<% end %>

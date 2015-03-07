@@ -20,6 +20,10 @@
       <%= f.text_field :module_name, placeholder: 'Module Name' %>
     </div>
     <div class="field">
+      <%= f.label :title %><br>
+      <%= f.text_field :title, placeholder: 'Title on calendar'  %>
+    </div>
+    <div class="field">
       <%= f.label :course_code %><br>
       <%= f.text_field :course_code, placeholder: 'Course Code' %>
     </div>
@@ -33,7 +37,7 @@
       <%= f.text_field :end_time, placeholder: 'End-Time', :class => 'datetimepicker'  %>
     </div>
     <div class="actions">
-      <%= f.submit class:'button'%>
+      <%= f.submit class:'button' %>
     </div>
 <% end %>
 

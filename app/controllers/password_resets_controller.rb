@@ -5,14 +5,14 @@ class PasswordResetsController < ApplicationController
 
   #Creates password reset object
   def create
-    @user = User.find_by_email(params[:email]) #finds user object by their email address
+    @user = User.find_by_username(params[:username]) #finds user object by their email address
     if @user # if the user is in the system
       @user.send_password_reset #run method to email them a password reset link
       #Tell user this has been done
-      flash.now.alert = "Email has been sent with reset password instructions"
+      flash.now.alert = "Username has been sent with reset password instructions"
     else
       #Otherwise tell user they are not registered
-      flash.now.alert = "This email is not registered with us."
+      flash.now.alert = "This username is not registered with us."
     end
   end #end method
 

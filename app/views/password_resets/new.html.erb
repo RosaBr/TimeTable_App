@@ -3,8 +3,6 @@
 <head>
   <meta charset="utf-8" />
   <title>Reset Password</title>
-  <link rel="stylesheet" href="normalize.css" />
-  <link rel="stylesheet" href="form.css" />
 
 
 </head>
@@ -15,7 +13,7 @@
       <h3>Forgot Password </h3>
     <div class="field">
       <%= label_tag 'Username' %>
-      <%= text_field_tag :email, params[:email] %>
+      <%= text_field_tag :username, params[:username] %>
     </div>
     <div class="actions">
       <%= submit_tag :recover, value: "Recover", class:'button' %>
@@ -30,22 +28,6 @@
     <%= image_tag "logo6.jpg" %>
   </div>
   </div>
-<footer>
-  <p>
-    <small>
-      <strong> University College Cork </strong>
-      <%= image_tag "location.png"%>Western Road, Cork
-      <%= image_tag "phone.png" %><a href="+353 (0)21 490 3000">+353 (0)21 490 3000</a>
-    </small>
-  </p>
-  <p>
-    <small>
-      &copy; Group One. All rights reserved.
-
-    </small>
-  </p>
-</footer>
-
 </body>
 
 </html>

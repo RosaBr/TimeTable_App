@@ -1,12 +1,18 @@
 class EventsController < ApplicationController
 
     def index
-      @user = User.find(session[:user])
-      @events = Event.where(created_by:  @user.username)
+      if signed_in?
+        @user = User.find(session[:user])
+        @events = Event.where(created_by:  @user.username)
+      else
+        @events = nil
+      end
+
+
     end
 
     def new #creates new event object
-       @event = Event.new
+      @event = Event.new
     end
 
     def show #index page of events
@@ -44,10 +50,12 @@ class EventsController < ApplicationController
     end
 
     def create
-      @user = User.find(session[:user])
-      #make new event with user data entered
-      @event = Event.new(event_params)
-      @event.created_by = @user.username
+
+        if signed_in?
+        @user = User.find(session[:user])
+        #make new event with user data entered
+        @event = Event.new(event_params)
+        @event.created_by = @user.username
 
       #Redirect to root url with success message if completed, otherwise render new
 
@@ -55,8 +63,11 @@ class EventsController < ApplicationController
             redirect_to root_url
             flash[:notice] = "Event created successfully"
           else
-            render 'new'
+
           end
+        else
+          render 'new'
+        end
 
     end
 

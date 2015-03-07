@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150303114653) do
+ActiveRecord::Schema.define(version: 20150305164237) do
 
   create_table "coursemodules", force: true do |t|
     t.string   "module_code"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20150303114653) do
     t.datetime "updated_at"
     t.datetime "start_time"
     t.datetime "end_time"
+    t.string   "title"
   end
 
   create_table "events", force: true do |t|

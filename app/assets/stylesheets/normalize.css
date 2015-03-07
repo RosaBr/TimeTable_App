@@ -31,7 +31,7 @@ html {
     margin-top: 60px;
     background-color: grey;
     width: 99.7%;
-    height: 210vh;
+    height: 280vh;
     -webkit-box-shadow: 4px 17px 5px -5px #D8D8D8;
     -moz-box-shadow: 4px 17px 5px -5px #D8D8D8;
     box-shadow: 4px 17px 5px -5px #D8D8D8;
@@ -42,6 +42,16 @@ html {
     background-color: grey;
     width: 99.7%;
     height: 90vh;
+    -webkit-box-shadow: 4px 17px 5px -5px #D8D8D8;
+    -moz-box-shadow: 4px 17px 5px -5px #D8D8D8;
+    box-shadow: 4px 17px 5px -5px #D8D8D8;
+}
+
+#main1 {
+    margin-top: 60px;
+    background-color: grey;
+    width: 99.7%;
+    height: 120vh;
     -webkit-box-shadow: 4px 17px 5px -5px #D8D8D8;
     -moz-box-shadow: 4px 17px 5px -5px #D8D8D8;
     box-shadow: 4px 17px 5px -5px #D8D8D8;
@@ -141,8 +151,7 @@ input[type=checkbox]:checked ~ #menu{
 
 
 
-@media screen and (max-width : 1100px){
-    /*Make dropdown links appear inline*/
+@media screen and (max-width : 1330px){
     ul {
         position: static;
         display: none;
@@ -152,15 +161,14 @@ input[type=checkbox]:checked ~ #menu{
 
 
     }
-    /*Create vertical spacing*/
+
     li {
         margin-bottom: 1px;
     }
-    /*Make all menu links full width*/
+
     ul li, li a {
         width: 100%;
     }
-    /*Display 'show menu' link*/
     .show-menu {
         display:block;
     }
@@ -172,7 +180,6 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 @media screen and (max-width : 200px){
-    /*Make dropdown links appear inline*/
     ul {
         position: static;
         display: none;
@@ -180,15 +187,15 @@ input[type=checkbox]:checked ~ #menu{
         width: 100%;
 
     }
-    /*Create vertical spacing*/
+
     li {
         margin-bottom: 1px;
     }
-    /*Make all menu links full width*/
+
     ul li, li a {
         width: 100%;
     }
-    /*Display 'show menu' link*/
+
     .show-menu {
         display:block;
     }

@@ -116,7 +116,12 @@ input:focus {
 }
 
 #error_explanation {
-   font-size: 12px;
+     font-size: 12px;
+     margin-bottom: 120%;
+ }
+
+#error_explanation1 {
+    font-size: 12px;
     margin-bottom: 38%;
 }
 
@@ -131,6 +136,7 @@ input:focus {
     margin-right: 3%;
     height: 75vh;
     margin-bottom: 2%;
+    margin-top: 3%;
 }
 
 ul#menu li:hover > ul
